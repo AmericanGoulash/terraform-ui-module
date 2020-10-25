@@ -1,0 +1,22 @@
+[
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "404"
+    },
+    "Redirect": {
+      "ReplaceKeyPrefixWith": "/",
+      "Protocol": "https",
+      "HostName": "${top_private_domain}"
+    }
+  },
+  {
+    "Condition": {
+      "HttpErrorCodeReturnedEquals": "403"
+    },
+    "Redirect": {
+      "ReplaceKeyPrefixWith": "/",
+      "Protocol": "https",
+      "HostName": "${top_private_domain}"
+    }
+  }
+]
