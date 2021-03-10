@@ -10,3 +10,4 @@ This is a terraform module to create a static website.
  - [x] ipv4 support
  - [x] ipv6 support
  - [x] all static assets cached on cloudfront except index.html
+ - [x] can attach WAF rule to it  
