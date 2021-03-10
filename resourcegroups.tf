@@ -1,5 +1,5 @@
 resource "aws_resourcegroups_group" "ui-resources" {
-  name = "ui-resources"
+  name = "ui-resources-${var.top_private_domain}"
 
   resource_query {
     query = <<JSON
@@ -9,8 +9,8 @@ resource "aws_resourcegroups_group" "ui-resources" {
   ],
   "TagFilters": [
     {
-      "Key": "Component",
-      "Values": ["ui"]
+      "Key": "Module",
+      "Values": ["terraform-ui-module"]
     }
   ]
 }

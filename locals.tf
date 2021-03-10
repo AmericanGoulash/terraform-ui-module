@@ -5,6 +5,6 @@ locals {
 
   common_tags = {
     CreatedBy = "terraform"
-    Component = "ui"
+    Module    = "terraform-ui-module"
   }
 }
